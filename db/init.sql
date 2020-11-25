@@ -2,11 +2,12 @@ create database airTravel;
 use airTravel;
 
 CREATE TABLE IF NOT EXISTS airTravelImport (
-    'ID' int AUTO_INCREMENT,
+    `id` int AUTO_INCREMENT,
     `Month` VARCHAR(3) CHARACTER SET utf8,
     `Column_1958` INT,
     `Column_1959` INT,
-    `Column_1960` INT
+    `Column_1960` INT,
+    primary key(id)
 );
 
 INSERT INTO airTravelImport (Month, Column_1958, Column_1959, Column_1960) VALUES

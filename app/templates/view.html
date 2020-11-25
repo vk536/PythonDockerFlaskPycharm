@@ -3,17 +3,20 @@
 
 <div class="card" class="m-5 p-2">
     <h5 class="card-title">{{ data.Month }} </h5>
-
+    <br/>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">{{ data.Column_1958 }}</li>
         <li class="list-group-item">{{ data.Column_1959 }}</li>
         <li class="list-group-item">{{ data.Column_1960 }}</li>
     </ul>
     <div class="card-body">
-        <a href="/edit/{{data.id}}" class="card-link btn btn-primary">edit</a>
+        <a href="/edit/{{data.id}}" class="card-link btn btn-primary">Edit</a>
+    </div>
+    <div>
+        <form action="/delete/{{data.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
     </div>
 </div>
-<form action="/delete/{{data.id}}" method="post"><button type="submit" class="btn btn-danger">Save</button></form>
+
 
 
 {% endblock %}
