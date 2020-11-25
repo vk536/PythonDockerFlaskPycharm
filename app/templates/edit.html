@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{data.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="fldMonth">Month</label>
+            <input id="fldMonth" type="text" class="form-control" placeholder="Month" name="fldMonth" value="{{data.Month}}">
+        </div>
+        <div class="col">
+            <label for="fld1958">Month</label>
+            <input id="fld1958" type="text" class="form-control" placeholder="Column_1958" name="fld1958" value="{{data.Column_1958}}">
+        </div>
+        <div class="col">
+            <label for="fld1959">Month</label>
+            <input id="fld1959" type="text" class="form-control" placeholder="Column_1959" name="fld1959" value="{{data.Column_1959}}">
+        </div>
+        <div class="col">
+            <label for="fld1960">Month</label>
+            <input id="fld1960" type="text" class="form-control" placeholder="Column_1960" name="fld1960" value="{{data.Column_1960}}">
+        </div>
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
