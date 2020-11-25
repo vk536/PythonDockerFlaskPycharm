@@ -39,11 +39,11 @@ def form_delete_post(data_id):
     mysql.get_db().commit()
     return redirect("/", code=302)
 
-@app.route('/cities/new', methods=['GET'])
+@app.route('/airTravelData/new', methods=['GET'])
 def form_insert_get():
     return render_template('new.html', title='New Month Form')
 
-@app.route('/cities/new', methods=['POST'])
+@app.route('/airTravelData/new', methods=['POST'])
 def form_insert_post():
     cursor = mysql.get_db().cursor()
     inputData = (request.form.get('fldMonth'), request.form.get('fld1958'),

@@ -23,3 +23,5 @@ INSERT INTO airTravelImport (Month, Column_1958, Column_1959, Column_1960) VALUE
     ('OCT',  359,  407,  461),
     ('NOV',  310,  362,  390),
     ('DEC',  337,  405,  432);
+
+SELECT * from airTravelImport;
